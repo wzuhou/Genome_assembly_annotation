@@ -1,0 +1,65 @@
+from pathlib import Path, PurePath
+
+# read config
+
+OUTDIR = config["outdir"]
+GENOME = config["genome"]
+FORWARD_READ = config["forward_read"]
+REVERSE_READ = config["reverse_read"]
+ISOSEQ_READ = config["isoseq_read"]
+PROTEINS = config["proteins"]
+MODE = config["mode"]
+ALIGNER = config["aligner"]
+SOFTMASKED = config["softmasked"]
+THREADS = ["threads"]
+
+PREFIX = PurePath(GENOME).stem
+
+## create symlink to genome to not create index files in genome folder
+
+if not Path(f"{OUTDIR}/genome").exists():
+    Path(f"{OUTDIR}/genome").mkdir()
+if not Path(f"{OUTDIR}/genome/{PREFIX}.fasta").exists():
+    Path(f"{OUTDIR}/genome/{PREFIX}.fasta").symlink_to(GENOME)
+GENOME = f"{OUTDIR}/genome/{PREFIX}.fasta"
+
+rule all:
+    input:
+        f"{OUTDIR}/bedtools/{PREFIX}_softmasked.fasta" #mask
+        #f"{OUTDIR}/hisat/{PREFIX}sorted_rna_alignment.bam" #RNAseq
+        #f"{OUTDIR}/braker/augustus.hints.gff3" #gene prediction
+        #f"{OUTDIR}/eggnog/{PREFIX}.emapper.annotations" #functional annotation
+        #f"{OUTDIR}/isoseq/gmst.global.gtf" #isoseq
+
+rule locals:
+    params:
+        ninja_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/NINJA-0.97-cluster_only/NINJA",
+        prothint_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/ProtHint-2.6.0/bin",
+        genemark_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmes_linux_64",
+        gmst_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmst_linux_64",
+        stringtie2fa_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
+        gmst2globalCoords = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
+        eggnog_db = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/test/eggnog_db",
+
+locals = rules.locals.params
+
+if SOFTMASKED:
+    include: "../rules/repeatmasker.smk"
+    include: "../rules/bedtools.smk"
+    GENOME = rules.bedtools.output.softmasked_fasta
+
+if ALIGNER == "hisat":
+    include: "../rules/hisat.smk"
+    SORTED_BAM = rules.hisat_sort_alignment.output.sorted_alignment
+elif ALIGNER == "star":
+    include: "../rules/star.smk"
+    SORTED_BAM = rules.star_align.output.sorted_alignment
+
+if ISOSEQ_READ:
+    include: "../rules/isoseq.smk"
+
+include: config["braker_mode"]
+
+#include: "../rules/evm.smk"
+
+include: "../rules/eggnog.smk"

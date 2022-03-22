@@ -1,0 +1,16 @@
+channels:
+  - bioconda 
+  - conda-forge
+  - defaults
+dependencies:
+  - bedtools
+  - braker2=2.1.6
+  - perl-hash-merge
+  - eggnog-mapper
+  - hisat2
+  - repeatmodeler 
+  - samtools
+  - star
+  - evidencemodeler
+  - cdna_cupcake
+  - minimap
