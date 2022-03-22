@@ -1,8 +1,9 @@
 # Genome_assembly_annotation
-Authors: wu090& liu194
-## Assessment
 
-## Busco
+Authors: wu090& liu194
+Update: *20220322*
+
+## Assessment
 
 ## Kmer
 
@@ -10,4 +11,6 @@ Authors: wu090& liu194
 
 ## Mitochondrial DNA
 
+## Busco
 
+## Dot-plot Comparative genome
