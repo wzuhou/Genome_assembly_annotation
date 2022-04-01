@@ -6,10 +6,10 @@ import sys, getopt
 """
 Author: Zhou Wu
 Date: 20220401
-####Usage
-####python [this script.py] *.efetch output chr_size.txt
+####Usage:
+####python [this script.py] -i <in_bed> -s <chr_size> -o <out_bed>
 ####python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test.out
-####
+
 """
 def main(argv):
     inputfile = ''
