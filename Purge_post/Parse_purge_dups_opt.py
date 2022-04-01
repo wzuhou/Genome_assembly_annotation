@@ -8,8 +8,7 @@ Author: Zhou Wu
 Date: 20220401
 ####Usage
 ####python [this script.py] *.efetch output chr_size.txt
-####python3 Parse_purge_dups.py dups_70.bed chr_size.txt test
-####python3 Parse_purge_dups.py test.bed test.chr_size test_test
+####python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test.out
 ####
 """
 def main(argv):
@@ -20,7 +19,8 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"hi:o:s:",["ifile=","ofile=","size_chr="])
     except getopt.GetoptError:
-        print('USAGE: python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test_test')
+        print('USAGE: 
+              python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test_test')
         sys.exit(2)
     for opt, arg in opts:
         if opt in ("-h", "--help"):
