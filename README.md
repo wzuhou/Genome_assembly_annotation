@@ -10,7 +10,7 @@ Update: *20220322*
 
 ## Purge_dups
 
-## Mitochondrial DNA
+## :curly_loop: Mitochondrial DNA
 
 ## Busco
 
