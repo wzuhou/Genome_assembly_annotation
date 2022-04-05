@@ -17,3 +17,5 @@ Update: *20220322*
 ## Dot-plot Comparative genome
 
 ## :trumpet: Genome annotation pipeline
+
+## :guitar: Purge_post
