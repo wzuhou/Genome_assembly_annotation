@@ -25,10 +25,10 @@ GENOME = f"{OUTDIR}/genome/{PREFIX}.fasta"
 
 rule all:
     input:
-        f"{OUTDIR}/bedtools/{PREFIX}_softmasked.fasta" #mask
+        #f"{OUTDIR}/bedtools/{PREFIX}_softmasked.fasta" #mask
         #f"{OUTDIR}/hisat/{PREFIX}sorted_rna_alignment.bam" #RNAseq
         #f"{OUTDIR}/braker/augustus.hints.gff3" #gene prediction
-        #f"{OUTDIR}/eggnog/{PREFIX}.emapper.annotations" #functional annotation
+        f"{OUTDIR}/eggnog/{PREFIX}.emapper.annotations" #functional annotation
         #f"{OUTDIR}/isoseq/gmst.global.gtf" #isoseq
 
 rule locals:
@@ -43,7 +43,7 @@ rule locals:
 
 locals = rules.locals.params
 
-if SOFTMASKED:
+if not SOFTMASKED:
     include: "../rules/repeatmasker.smk"
     include: "../rules/bedtools.smk"
     GENOME = rules.bedtools.output.softmasked_fasta
