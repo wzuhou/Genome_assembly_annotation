@@ -37,18 +37,19 @@ After genes are predicted, run [Eggnog-mapper](https://github.com/eggnogdb/eggno
 ```
 
 ## Test dataset
-wget http://topaz.gatech.edu/GeneMark/Braker/RNAseq.bam
-wget https://raw.githubusercontent.com/Gaius-Augustus/BRAKER/master/example/genome.fa
-wget https://raw.githubusercontent.com/Gaius-Augustus/BRAKER/master/example/proteins.fa
-samtools sort -n -o RNAseq.sorted.bam RNAseq.bam
-bedtools bamtofastq -i RNAseq.sorted.bam -fq R1.fq -fq2 R2.fq
+wget http://topaz.gatech.edu/GeneMark/Braker/RNAseq.bam  
+wget https://raw.githubusercontent.com/Gaius-Augustus/BRAKER/master/example/genome.fa   
+wget https://raw.githubusercontent.com/Gaius-Augustus/BRAKER/master/example/proteins.fa  
+samtools sort -n -o RNAseq.sorted.bam RNAseq.bam  
+bedtools bamtofastq -i RNAseq.sorted.bam -fq R1.fq -fq2 R2.fq  
 
-python3 Anno_pipeline.V1.py \
--m fasta_rna_faa \
-    -a genome.fa \
-    -s1 R1.fq \
-    -s2 R2.fq \
-    -iso R1.fq,R2.fq \
-    -f proteins.fa \
-    -o test_pipeline \
+
+python3 Anno_pipeline.V1.py \  
+-m fasta_rna_faa \  
+    -a genome.fa \  
+    -s1 R1.fq \  
+    -s2 R2.fq \  
+    -iso R1.fq,R2.fq \  
+    -f proteins.fa \  
+    -o test_pipeline \  
     -t 2 
