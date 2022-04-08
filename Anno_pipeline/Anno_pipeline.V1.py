@@ -26,6 +26,7 @@ def config_maker(settings, config_file):
     "softmasked" : "{settings["softmasked"]}"
     "threads" : "{settings["threads"]}"
     "braker_mode": "{settings["braker_mode"]}"
+    "species": "{settings["species"]}"
     """
 
     if not os.path.exists(os.path.dirname(config_file)):
@@ -65,7 +66,7 @@ if __name__ == '__main__':
     parser.add_argument('-s1','--forward_rna_read', help="path to forward rna-seq read", default="")
     parser.add_argument('-s2','--reverse_rna_read', help="path to reverse rna-seq read", default="")
     parser.add_argument('-iso','--isoseq', help="path to long read iso-seq read", default="")
-    parser.add_argument('--aligner', help="aligner to use, hisat is defaul", choices=["hisat", "star"], default="hisat")
+    parser.add_argument('--aligner', help="aligner to use, hisat is defaul", choices=["hisat", "star"], default="")
     parser.add_argument('-f','--faa', 
                         help="path to protein fasta file (.faa), required for fasta_faa and fasta_rna_faa modes",
                         default="")
@@ -73,6 +74,7 @@ if __name__ == '__main__':
     parser.add_argument('-o','--outdir', help='output directory', required=True)
     parser.add_argument('-t','--threads', help='number of threads [default == 8]', default = "8")
     parser.add_argument('-d','--debug', help='debug mode', action='store_true')
+    parser.add_argument('--species', help='gene model used for Augustus', default="")
     args = vars(parser.parse_args())
 
     assembly_fasta = os.path.abspath(args["assembly"])
@@ -86,6 +88,7 @@ if __name__ == '__main__':
     faa_file = args["faa"]
     aligner = args["aligner"]
     outdir = os.path.abspath(args["outdir"])
+    species = args["species"]
     
     execution_folder = os.path.dirname(os.path.abspath(getsourcefile(lambda: 0)))
     execution_time = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
@@ -143,6 +146,7 @@ if __name__ == '__main__':
         "aligner" : aligner,
         "config_file" : config_file,
         "braker_mode" : braker_file,
+        "species" : species,
     }
     
     config_maker(settings, config_file)

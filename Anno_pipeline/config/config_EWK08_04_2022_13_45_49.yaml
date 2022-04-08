@@ -1,0 +1,14 @@
+
+    "outdir" : "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__TopSecretSuperConfidentialCuckooSecrets/annotation_fasta_faa"
+    "genome" : "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__TopSecretSuperConfidentialCuckooSecrets/GCA_017976375.1_bCucCan1.pri_genomic.CHR.fa"
+    "forward_read" : ""
+    "reverse_read" : ""
+    "isoseq_read" : ""
+    "proteins" : "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__TopSecretSuperConfidentialCuckooSecrets/Gallus_gallus.GRCg6a.pep.all.fa"
+    "mode" : "fasta_faa"
+    "aligner" : ""
+    "softmasked" : "True"
+    "threads" : "80"
+    "braker_mode": "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Genome_assembly_annotation/Anno_pipeline/rules/braker_faa.smk"
+    "species": ""
+    
