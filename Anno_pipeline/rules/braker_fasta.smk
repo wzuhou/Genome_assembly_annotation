@@ -4,9 +4,10 @@ if not SPECIES:
             braker_in_fasta = GENOME,
         threads: min(48, workflow.cores)
         output:
+            braker_out_dna = f"{OUTDIR}/braker/augustus.ab_initio.codingseq",
+            #braker_out_gtf = f"{OUTDIR}/braker/augustus.ab_initio.gtf",
+            braker_out_gff = f"{OUTDIR}/braker/augustus.ab_initio.gff3",
             braker_out_aa = f"{OUTDIR}/braker/augustus.ab_initio.aa",
-            braker_out_gtf = f"{OUTDIR}/braker/augustus.ab_initio.gtf",
-            braker_out_gff = f"{OUTDIR}/braker/augustus.hints.gff3",
         params:
             prefix = PREFIX,
             genemark_path = locals.genemark_path,
@@ -30,7 +31,9 @@ if not SPECIES:
             --cores={threads} \
             --gff3 \
             --genome={input.braker_in_fasta} \
-            --species={params.prefix} \
+            --species={params.prefix}
+
+            seqkit translate {output.braker_out_dna} | sed 's/_.*//' > {output.braker_out_aa}
             """
 else:
     rule braker:
@@ -38,15 +41,16 @@ else:
             braker_in_fasta = GENOME,
         threads: min(48, workflow.cores)
         output:
+            braker_out_dna = f"{OUTDIR}/braker/augustus.ab_initio.codingseq",
+            #braker_out_gtf = f"{OUTDIR}/braker/augustus.ab_initio.gtf",
+            braker_out_gff = f"{OUTDIR}/braker/augustus.ab_initio.gff3",
             braker_out_aa = f"{OUTDIR}/braker/augustus.ab_initio.aa",
-            braker_out_gtf = f"{OUTDIR}/braker/augustus.ab_initio.gtf",
-            braker_out_gff = f"{OUTDIR}/braker/augustus.hints.gff3",
         params:
             prefix = PREFIX,
             genemark_path = locals.genemark_path,
             prothint_path = locals.prothint_path,
-            output_dir = directory(OUTDIR)
-            species = SPECIES
+            output_dir = directory(OUTDIR),
+            species = SPECIES,
         shell:
             """
             cd {params.genemark_path}
@@ -65,5 +69,7 @@ else:
             --cores={threads} \
             --gff3 \
             --genome={input.braker_in_fasta} \
-            --species={params.species} \
+            --species={params.species}
+            
+            seqkit translate {output.braker_out_dna} | sed 's/_.*//' > {output.braker_out_aa}
             """

@@ -23,7 +23,7 @@ def config_maker(settings, config_file):
     "proteins" : "{settings["faa"]}"
     "mode" : "{settings["mode"]}"
     "aligner" : "{settings["aligner"]}"
-    "softmasked" : "{settings["softmasked"]}"
+    "softmasked" : {settings["softmasked"]}
     "threads" : "{settings["threads"]}"
     "braker_mode": "{settings["braker_mode"]}"
     "species": "{settings["species"]}"

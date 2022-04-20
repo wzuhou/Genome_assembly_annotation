@@ -48,6 +48,6 @@ rule repeatmasker:
         RepeatMasker \
         -pa {threads} \
         -lib {input.rm_families} \
-        -smal -poly -html -source -gff -u -excln -dir {params.rm_dir} \
+        -xsmall -gff -dir {params.rm_dir} \
         {input.assembly}
         """
