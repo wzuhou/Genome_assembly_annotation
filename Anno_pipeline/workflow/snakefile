@@ -12,6 +12,7 @@ MODE = config["mode"]
 ALIGNER = config["aligner"]
 SOFTMASKED = config["softmasked"]
 THREADS = ["threads"]
+SPECIES = config["species"]
 
 PREFIX = PurePath(GENOME).stem
 

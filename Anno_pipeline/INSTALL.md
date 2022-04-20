@@ -16,8 +16,9 @@ tar zxvf ProtHint-2.6.0.tar.gz
 chmod +x ProtHint-2.6.0/bin/* & chmod +x ProtHint-2.6.0/dependencies/*  
 #install genemark-ex  
 1.Download and unzip GeneMark-EX and LICENSE_KEY from http://topaz.gatech.edu/GeneMark/license_download.cgi  
-2.Run change_path_in_perl_scripts.pl from Genemark folder to change perl dir to one, which is in my environment directory /path/to/miniconda/envs/braker/bin/perl  
+2.Run change_path_in_perl_scripts.pl from Genemark folder to change perl dir to one, which is in my environment directory /path/to/miniconda/envs/Anno_pipeline/bin/perl  
 chmod +x *  
+chmod +x ProtHint/bin/*
 3.Unzip LICENSE_KEY to hiddenfile in my home directory "gunzip ./license_key.gz" "mv ./license_key ~/.gm_key"  
 4.Run "check_install.bash"  
 5.chmod +x gmes_linux_64/ProtHint/bin/* & chmod +x gmes_linux_64/ProtHint/dependencies/*  
