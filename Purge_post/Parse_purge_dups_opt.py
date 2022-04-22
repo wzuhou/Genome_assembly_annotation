@@ -6,6 +6,8 @@ import sys, getopt
 """
 Author: Zhou Wu
 Date: 20220401
+This code is used to process the files post-purged, 
+to return a bed file with only regions at the begining or end of scaffold
 ####Usage:
 ####python [this script.py] -i <in_bed> -s <chr_size> -o <out_bed>
 ####python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test.out
