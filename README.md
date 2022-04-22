@@ -21,6 +21,8 @@ See **Purge_post/**
 
 ## :curly_loop: Mitochondrial DNA
 
+Script: `run_mito_mapp.sh` and `remove_fa.sh`
+
 ## :pushpin: Busco
 
 ## :triangular_ruler: Dot-plot Comparative genome
