@@ -6,8 +6,9 @@ Major Update: *20220322*
 
 ## :bar_chart: Assessment
 
-Genome_statistic
-RepeatMask
+### Genome_statistic
+
+### RepeatMask
 
 ## :joy_cat: Kmer
 `Kmer_jellyfish.sh` Using jellyfish to calculate the Kmer
