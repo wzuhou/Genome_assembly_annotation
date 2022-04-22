@@ -12,6 +12,7 @@ Major Update: *20220322*
 ## Purge_dups
 
 Ater Purge_dups, I used my python code to select those regions at the end of the begining of a scaffold
+See **Purge_post/**
 
 ## :curly_loop: Mitochondrial DNA
 
