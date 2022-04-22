@@ -10,7 +10,6 @@
 #$ -l h_vmem=8G
 #$ -M zwu33@ed.ac.uk
 #$ -m baes
-#$ -P roslin_smith_grp
 #'$ -pe sharedmem 8
 
 # If you plan to load any software modules, then you must first initialise the modules framework.
