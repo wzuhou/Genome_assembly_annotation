@@ -15,7 +15,7 @@ Major Update: *20220322*
 
 ## :scissors: Purge_dups
 
-### :guitar: Purge_post
+### Purge_post
 
 Ater Purge_dups, I used my python code to select those regions at the end of the begining of a scaffold. 
 See **Purge_post/**  
