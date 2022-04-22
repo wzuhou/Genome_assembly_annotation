@@ -9,10 +9,10 @@ Major Update: *20220322*
 ## Kmer
 `Kmer_jellyfish.sh` Using jellyfish to calculate the Kmer
 
-## Purge_dups
+## :scissors: Purge_dups
 
-Ater Purge_dups, I used my python code to select those regions at the end of the begining of a scaffold
-See **Purge_post/**
+
+Ater Purge_dups, I used my python code to select those regions at the end of the begining of a scaffold. See **Purge_post/**
 
 ## :curly_loop: Mitochondrial DNA
 
