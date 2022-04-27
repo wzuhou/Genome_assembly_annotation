@@ -20,6 +20,12 @@ Major Update: *20220322*
 Ater Purge_dups, I used my python code to select those regions at the end of the begining of a scaffold. 
 See **Purge_post/**  
 
+`Parse_purge_dups_opt.py`, `test.bed`, `test.chr_size`, and `test.out`
+
+```bash
+python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test.out
+```
+
 ## :curly_loop: Mitochondrial DNA
 
 `run_mito_mapp.sh` and `remove_fa.sh`
