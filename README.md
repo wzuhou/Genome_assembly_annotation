@@ -28,6 +28,8 @@ See **Purge_post/**
 
 ## :triangular_ruler: Dot-plot Comparative genome
 
+`make_dot_nucmur.sh` and `mummerCoordsDotPlotly.R`
+
 ## :trumpet: Genome annotation pipeline
 
 
