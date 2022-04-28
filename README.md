@@ -34,7 +34,7 @@ python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test.out
 
 ## :triangular_ruler: Dot-plot Comparative genome
 
-`make_dot_nucmur.sh` and `mummerCoordsDotPlotly.R`
+`make_dot_nucmur.sh` and `mummerCoordsDotPlotly.R` (adopted from tpoorten/dotPlotly )
 
 ## :trumpet: Genome annotation pipeline
 
