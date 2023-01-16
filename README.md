@@ -13,9 +13,9 @@ N50, N90 Calculation
 ### RepeatMask
 
 ```bash
-RepeatModeler -database KV -engine ncbi -pa 8
+RepeatModeler -database test -engine ncbi -pa 8
 #export BLASTDB_LMDB_MAP_SIZE=100000000 #If needed
-RepeatMasker KV.fa -lib ./KV-families.fa -xsmall -s -gff -pa 8
+RepeatMasker test.fa -lib ./test-families.fa -xsmall -s -gff -pa 8
 ```
 
 ## :joy_cat: Kmer
