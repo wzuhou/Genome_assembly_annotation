@@ -8,7 +8,15 @@ Major Update: *20220322*
 
 ### Genome_statistic
 
+N50, N90 Calculation
+
 ### RepeatMask
+
+```bash
+RepeatModeler -database KV -engine ncbi -pa 8
+#export BLASTDB_LMDB_MAP_SIZE=100000000 #If needed
+RepeatMasker KV.fa -lib ./KV-families.fa -xsmall -s -gff -pa 8
+```
 
 ## :joy_cat: Kmer
 `Kmer_jellyfish.sh` Using jellyfish to calculate the Kmer
