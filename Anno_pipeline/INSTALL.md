@@ -13,7 +13,7 @@ wget --no-check-certificate https://github.com/TravisWheelerLab/NINJA/archive/re
 #install prothint  
 wget --no-check-certificate https://github.com/gatech-genemark/ProtHint/releases/download/v2.6.0/ProtHint-2.6.0.tar.gz  
 tar zxvf ProtHint-2.6.0.tar.gz  
-chmod +x ProtHint-2.6.0/bin/* & chmod +x ProtHint-2.6.0/dependencies/*  
+chmod +x ProtHint-2.6.0/bin/* && chmod +x ProtHint-2.6.0/dependencies/*  
 #install genemark-ex  
 1.Download and unzip GeneMark-EX and LICENSE_KEY from http://topaz.gatech.edu/GeneMark/license_download.cgi  
 2.Run change_path_in_perl_scripts.pl from Genemark folder to change perl dir to one, which is in my environment directory /path/to/miniconda/envs/Anno_pipeline/bin/perl  
