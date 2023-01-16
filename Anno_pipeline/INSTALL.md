@@ -24,7 +24,7 @@ chmod +x ProtHint/bin/*
 5.chmod +x gmes_linux_64/ProtHint/bin/* & chmod +x gmes_linux_64/ProtHint/dependencies/*  
 #install genemarks-t  
 same as genemark-ex  
-#download eggnog_db (~61G)  
+#download eggnog_db (~6.1G)  
 download_eggnog_data.py --data_dir ./ -P -M -y  
 #download stringtie2fa.py from recent version Augustus  
 wget https://raw.githubusercontent.com/Gaius-Augustus/Augustus/master/scripts/stringtie2fa.py  
