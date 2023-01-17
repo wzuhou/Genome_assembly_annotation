@@ -41,9 +41,9 @@ chmod +x ProtHint/bin/*
 5.chmod +x gmes_linux_64/ProtHint/bin/* & chmod +x gmes_linux_64/ProtHint/dependencies/*  
 
 ### install genemarks-t  
-```bash
+
 same as genemark-ex
-```
+
 
 ### download eggnog_db (~61G)  
 ```bash
