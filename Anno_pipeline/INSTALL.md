@@ -62,13 +62,13 @@ chmod +x *
 
 ```bash
 #line 35-42
-        ninja_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/NINJA-0.97-cluster_only/NINJA",
-        prothint_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/ProtHint-2.6.0/bin",
-        genemark_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmes_linux_64",
-        gmst_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmst_linux_64",
-        stringtie2fa_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
-        gmst2globalCoords = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
-        eggnog_db = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/test/eggnog_db",
+    ninja_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/NINJA-0.97-cluster_only/NINJA",
+    prothint_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/ProtHint-2.6.0/bin",
+    genemark_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmes_linux_64",
+    gmst_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmst_linux_64",
+    stringtie2fa_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
+    gmst2globalCoords = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
+    eggnog_db = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/test/eggnog_db",
 ```
 ### DONE  
 
