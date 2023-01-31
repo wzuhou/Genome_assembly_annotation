@@ -70,6 +70,7 @@ chmod +x *
         stringtie2fa_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
         gmst2globalCoords = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
         eggnog_db = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/test/eggnog_db",
+        #what about this one? GeneMarkHMM_GTF_to_EVM_GFF3
 ```
 ### DONE  
 
