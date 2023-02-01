@@ -43,7 +43,7 @@ chmod +x ProtHint-2.6.0/bin/* & chmod +x ProtHint-2.6.0/dependencies/*
 
 ### install genemarks-t  
 
-same as genemark-ex
+same as genemark-ex #what exactly do you mean?
 
 
 ### download eggnog_db (~61G)  
