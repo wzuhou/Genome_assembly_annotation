@@ -66,7 +66,7 @@ if __name__ == '__main__':
     parser.add_argument('-s1','--forward_rna_read', help="path to forward rna-seq read", default="")
     parser.add_argument('-s2','--reverse_rna_read', help="path to reverse rna-seq read", default="")
     parser.add_argument('-iso','--isoseq', help="path to long read iso-seq read", default="")
-    parser.add_argument('--aligner', help="aligner to use, hisat is defaul", choices=["hisat", "star"], default="")
+    parser.add_argument('--aligner', help="aligner to use, hisat is defaul", choices=["hisat", "star"], default="hisat")
     parser.add_argument('-f','--faa', 
                         help="path to protein fasta file (.faa), required for fasta_faa and fasta_rna_faa modes",
                         default="")
