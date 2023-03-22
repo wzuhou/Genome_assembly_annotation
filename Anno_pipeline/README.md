@@ -57,7 +57,3 @@ python3 Anno_pipeline.V1.py \
     -t 2 
 ```
 
----
-<p align="center">
-  <img src="https://https://raw.githubusercontent.com/wzuhou/Genome_assembly_annotation/blob/main/Anno_pipeline/workflow.pdf">
-</p>
