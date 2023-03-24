@@ -28,7 +28,7 @@ wget --no-check-certificate https://github.com/TravisWheelerLab/NINJA/archive/re
 ```bash
 wget --no-check-certificate https://github.com/gatech-genemark/ProtHint/releases/download/v2.6.0/ProtHint-2.6.0.tar.gz  
 tar zxvf ProtHint-2.6.0.tar.gz  
-chmod +x ProtHint-2.6.0/bin/* & chmod +x ProtHint-2.6.0/dependencies/*  
+chmod +x ProtHint-2.6.0/bin/* && chmod +x ProtHint-2.6.0/dependencies/*  
 ```
 
 ### install genemark-ex  
