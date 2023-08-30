@@ -1,0 +1,8 @@
+# R codes for genome assembly figures
+
+The R codes used in the paper, entitled 'High quality genome assembly of a wild living white-crowned sparrow (*Zonotrichia Leucophrys*)'.
+
+1. Fig1_circos.R
+2. Fig2_dot.R
+3. Fig3_BUSCO.R
+4. FIG4_chr_features.R
