@@ -48,4 +48,6 @@ python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test.out
 
 ## :eyes: Scripts to create figures in paper
 
-## :eyes: Scripts to create figures in paper
+
+
+
