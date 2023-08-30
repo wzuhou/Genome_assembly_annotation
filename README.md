@@ -4,6 +4,8 @@ Authors: wu090& liu194
 
 Major Update: *20220322*
 
+The code should be used with your own input to replace the test.files
+
 ## :bar_chart: Assessment
 
 ### Genome_statistic
@@ -41,6 +43,10 @@ python3 Parse_purge_dups.py -i test.bed -s test.chr_size -o test.out
 ## :pushpin: Busco
 
 `BUSCO.sh`
+
+```sh
+busco -i test.fa -o  test_vertebrata_busco --out_path ./busco -m genome -l vertebrata_odb10 -c 16 -f
+```
 
 ## :triangular_ruler: Dot-plot Comparative genome
 
