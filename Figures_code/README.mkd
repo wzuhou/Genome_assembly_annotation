@@ -7,4 +7,4 @@ The R codes used in the paper, entitled
 1. Fig1_circos.R
 2. Fig2_dot.R
 3. Fig3_BUSCO.R
-4. FIG4_chr_features.R
+4. Fig4_chr_features.R
