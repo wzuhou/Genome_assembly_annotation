@@ -60,5 +60,32 @@ busco -i test.fa -o  test_vertebrata_busco --out_path ./busco -m genome -l verte
 ## :eyes: Scripts to create figures in paper
 `Fig1_circos.R`, `Fig2_dot.R`, `Fig3_BUSCO.R`, `Fig4_chr_features.R`
 
+## Pipeline
+
+```mermaid
+stateDiagram
+    #[*] --> genome
+    #genome --> [*]
+    Short_read_polishing --> genome
+    OmniC --> genome
+    PacBio --> genome
+    #genome --> repeatmask
+    genome --> RNAseq
+    RNAseq --> Splice_junctions
+    Splice_junctions --> transdecoder
+    transdecoder --> protein_prediction
+    genome --> Isoseq
+    genome --> ab_initio 
+    genome --> Braker_ETP
+    Protein --> Braker_ETP
+    RNAseq --> Braker_ETP
+    Isoseq --> EVM
+    ab_initio  --> EVM
+    Braker_ETP --> EVM
+    transdecoder --> EVM
+    protein_prediction --> EVM
+    
+```
+
 
 
