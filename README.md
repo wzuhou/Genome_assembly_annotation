@@ -15,9 +15,12 @@ N50, N90 Calculation
 ### RepeatMask
 
 ```bash
-RepeatModeler -database test -engine ncbi -pa 8
-#export BLASTDB_LMDB_MAP_SIZE=100000000 #If needed
-RepeatMasker test.fa -lib ./test-families.fa -xsmall -s -gff -pa 8
+# Run RepeatModeler to generate repeat library
+RepeatModeler -ninja_dir ${ninja_path} -pa ${threads} -LTRStruct -database ${PREFIX}_masked
+
+# Run RepeatMasker with repeat library to mask repeats in genome and output results in GFF format
+export BLASTDB_LMDB_MAP_SIZE=100000000
+RepeatMasker -pa ${threads} -lib ${PREFIX}-families.fa -xsmall -s -pa 4 -gff -dir ${OUTPUT}/repeatmasker/ ${GENOME}
 ```
 
 ## :joy_cat: Kmer
