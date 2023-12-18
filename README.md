@@ -63,6 +63,8 @@ busco -i test.fa -o  test_vertebrata_busco --out_path ./busco -m genome -l verte
 ## Pipeline
 
 ```mermaid
+%%{init: {'theme':'forest'}}%%
+
 stateDiagram
     #[*] --> genome
     #genome --> [*]
