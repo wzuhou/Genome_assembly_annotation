@@ -6,6 +6,8 @@ Major Update: *20220322*
 
 The code should be used with your own input to replace the test.files
 
+[TOC]
+
 ## :bar_chart: Assessment
 
 ### Genome_statistic
