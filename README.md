@@ -62,6 +62,7 @@ busco -i test.fa -o  test_vertebrata_busco --out_path ./busco -m genome -l verte
 `Fig1_circos.R`, `Fig2_dot.R`, `Fig3_BUSCO.R`, `Fig4_chr_features.R`
 
 *Cite this article*
+
 Wu, Z., Miedzinska, K., Krause, J.S. et al. A chromosome-level genome assembly of a free-living white-crowned sparrow (Zonotrichia leucophrys gambelii). Sci Data 11, 86 (2024). https://doi.org/10.1038/s41597-024-02929-6
 
 ## Pipeline
