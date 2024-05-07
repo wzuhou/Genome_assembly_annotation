@@ -92,5 +92,5 @@ stateDiagram
 
 ## Cite this article
 
-Wu, Z., Miedzinska, K., Krause, J.S. et al. A chromosome-level genome assembly of a free-living white-crowned sparrow (Zonotrichia leucophrys gambelii). Sci Data 11, 86 (2024). https://doi.org/10.1038/s41597-024-02929-6
+Wu, Z., Miedzinska, K., Krause, J.S. et al. A chromosome-level genome assembly of a free-living white-crowned sparrow (*Zonotrichia leucophrys gambelii*). Sci Data 11, 86 (2024). https://doi.org/10.1038/s41597-024-02929-6
 
