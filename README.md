@@ -1,6 +1,6 @@
 # Genome_assembly_annotation
 
-Authors: wu090& liu194
+Authors: Zhou wu090& Langqing liu194
 
 Major Update: *20220322*
 
