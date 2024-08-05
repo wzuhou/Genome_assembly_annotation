@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/061f5fa1-35c8-4b29-abae-095c684fdbf5)### install manba  
+### install manba  
 ```bash
 conda install -c conda-forge mamba
 ```
