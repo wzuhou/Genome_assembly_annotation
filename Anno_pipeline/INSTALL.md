@@ -21,7 +21,7 @@ cd install
 
 ### install ninja  
 ```bash
-wget --no-check-certificate https://github.com/TravisWheelerLab/NINJA/archive/refs/tags/0.97-cluster_only.zip && unzip ./0.97-cluster_only.zip && cd NINJA-0.97-cluster_only/NINJA && make %% cd ../..  
+wget --no-check-certificate https://github.com/TravisWheelerLab/NINJA/archive/refs/tags/0.97-cluster_only.zip && unzip ./0.97-cluster_only.zip && cd NINJA-0.97-cluster_only/NINJA && make && cd ../..  
 ```
 
 ### install prothint  
