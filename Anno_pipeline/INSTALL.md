@@ -1,4 +1,4 @@
-### install manba  
+![image](https://github.com/user-attachments/assets/061f5fa1-35c8-4b29-abae-095c684fdbf5)### install manba  
 ```bash
 conda install -c conda-forge mamba
 ```
@@ -21,7 +21,7 @@ cd install
 
 ### install ninja  
 ```bash
-wget --no-check-certificate https://github.com/TravisWheelerLab/NINJA/archive/refs/tags/0.97-cluster_only.zip && unzip ./0.97-cluster_only.zip && mv ./NINJA-0.97-cluster_only/NINJA/Ninja_new ./NINJA-0.97-cluster_only/NINJA/Ninja  
+wget --no-check-certificate https://github.com/TravisWheelerLab/NINJA/archive/refs/tags/0.97-cluster_only.zip && unzip ./0.97-cluster_only.zip && cd NINJA-0.97-cluster_only/NINJA && make %% cd ../..  
 ```
 
 ### install prothint  
@@ -32,8 +32,12 @@ chmod +x ProtHint-2.6.0/bin/* && chmod +x ProtHint-2.6.0/dependencies/*
 ```
 
 ### install genemark-ex  
-1.Download and unzip GeneMark-EX and LICENSE_KEY from http://topaz.gatech.edu/GeneMark/license_download.cgi  
-2.Run `change_path_in_perl_scripts.pl` from Genemark folder to change perl dir to one, which is in my environment directory /path/to/miniconda/envs/Anno_pipeline/bin/perl  
+1.Download and unzip GeneMark-EX and LICENSE_KEY from http://topaz.gatech.edu/GeneMark/license_download.cgi  ( GeneMark-ES/ET/EP+ ver 4.72_lic/LINUX 64 kernel 3.10 - 5; GeneMarkS-T/LINUX 64)
+```bash
+cd gmes_linux_64_4
+```
+2.Run `change_path_in_perl_scripts.pl` from Genemark folder to change perl dir to one, which is in my environment directory 
+/path/to/miniconda/envs/Anno_pipeline/bin/perl  
 ```bash
 chmod +x * 
 chmod +x ProtHint/bin/*
@@ -41,11 +45,11 @@ chmod +x ProtHint/bin/*
 
 3.Unzip LICENSE_KEY to hiddenfile in my home directory "gunzip ./license_key.gz" "mv ./license_key ~/.gm_key"  
 4.Run "check_install.bash"  
-5.chmod +x gmes_linux_64/ProtHint/bin/* & chmod +x gmes_linux_64/ProtHint/dependencies/*  
+5.chmod +x gmes_linux_64_4/ProtHint/bin/* & chmod +x gmes_linux_64/ProtHint/dependencies/*  
 
 ### install genemarks-t  
 
-same as genemark-ex
+same as genemark-ex (optional)
 
 
 ### download eggnog_db (~61G)  
@@ -68,7 +72,7 @@ chmod +x *
         ninja_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/NINJA-0.97-cluster_only/NINJA",
         prothint_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/ProtHint-2.6.0/bin",
         genemark_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmes_linux_64",
-        gmst_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmst_linux_64",
+        gmst_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install/gmst_linux_64_4",
         stringtie2fa_path = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
         gmst2globalCoords = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/Anno_pipeline/install",
         eggnog_db = "/dss/dsslegfs01/pr53da/pr53da-dss-0035/2022__Coturnix/Annotation/test_pipline/test/eggnog_db",
