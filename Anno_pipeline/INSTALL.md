@@ -36,9 +36,10 @@ chmod +x ProtHint-2.6.0/bin/* && chmod +x ProtHint-2.6.0/dependencies/*
 ```bash
 cd gmes_linux_64_4
 ```
-2.Run `change_path_in_perl_scripts.pl` from Genemark folder to change perl dir to one, which is in my environment directory 
+2.Run `change_path_in_perl_scripts.pl` from Genemark folder to change perl dir to one, which is in my conda environment directory 
 /path/to/miniconda/envs/Anno_pipeline/bin/perl  
 ```bash
+perl change_path_in_perl_scripts.pl "/path/to/miniconda/envs/Anno_pipeline/bin/perl"
 chmod +x * 
 chmod +x ProtHint/bin/*
 ```
