@@ -32,7 +32,8 @@ chmod +x ProtHint-2.6.0/bin/* && chmod +x ProtHint-2.6.0/dependencies/*
 ```
 
 ### install genemark-ex  
-1.Download and unzip GeneMark-EX and LICENSE_KEY from http://topaz.gatech.edu/GeneMark/license_download.cgi  ( GeneMark-ES/ET/EP+ ver 4.72_lic/LINUX 64 kernel 3.10 - 5; GeneMarkS-T/LINUX 64)
+1.Download and unzip GeneMark-EX and LICENSE_KEY from http://topaz.gatech.edu/GeneMark/license_download.cgi 
+( GeneMark-ES/ET/EP+ ver 4.72_lic/LINUX 64 kernel 3.10 - 5; GeneMarkS-T/LINUX 64)
 ```bash
 cd gmes_linux_64_4
 ```
@@ -63,7 +64,8 @@ download_eggnog_data.py --data_dir ./ -P -M -y
 wget https://raw.githubusercontent.com/Gaius-Augustus/Augustus/master/scripts/stringtie2fa.py  
 wget https://raw.githubusercontent.com/Gaius-Augustus/BRAKER/long_reads/scripts/gmst2globalCoords.py  
 wget https://raw.githubusercontent.com/EVidenceModeler/EVidenceModeler/master/EvmUtils/misc/GeneMarkHMM_GTF_to_EVM_GFF3.pl  
-chmod +x *  
+chmod +x *
+#also in https://github.com/wzuhou/Genome_assembly_annotation/tree/main/Anno_pipeline/script
 ```
 
 ### change the path in workflow/snakefile  
