@@ -56,10 +56,11 @@ busco -i test.fa -o  test_vertebrata_busco --out_path ./busco -m genome -l verte
 
 `make_dot_nucmur.sh` and `mummerCoordsDotPlotly.R` (adopted from tpoorten/dotPlotly )
 
-## :trumpet: Genome annotation pipeline(see below)
-
 ## :eyes: Scripts to create figures in paper
 `Fig1_circos.R`, `Fig2_dot.R`, `Fig3_BUSCO.R`, `Fig4_chr_features.R`
+
+
+## :trumpet: Genome annotation pipeline
 
 ## Pipeline
 
